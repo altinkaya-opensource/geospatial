@@ -105,6 +105,9 @@ odoo.define("web_view_leaflet_map.MapRenderer", function (require) {
         },
 
         _prepareMarkerIcon: function (record) {
+            if (!this.field_marker_icon_image) {
+                return false;
+            }
             var myIcon = L.icon({
                 iconUrl: session.url("/web/image", {
                     model: record.model,
@@ -165,10 +168,14 @@ odoo.define("web_view_leaflet_map.MapRenderer", function (require) {
             this.leaflet_container = $mainDiv[0];
             this.leaflet_map = L.map(this.leaflet_container, {
                 zoomSnap: this.zoom_snap,
+                preferCanvas: true,
             }).setView(this.default_lat_lng, this.default_zoom);
+            this.leaflet_map.attributionControl.setPrefix(false);
             this.leaflet_tiles = L.tileLayer(this.leaflet_tile_url, {
                 maxZoom: this.max_zoom,
                 attribution: this.leaflet_copyright,
+                updateWhenZooming: false,
+                updateWhenIdle: true,
             }).addTo(this.leaflet_map);
             this.$el.append($mainDiv);
         },
