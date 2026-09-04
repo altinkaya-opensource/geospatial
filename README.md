@@ -1,4 +1,7 @@
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# geospatial
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/geospatial&target_branch=16.0)
 [![Pre-commit Status](https://github.com/OCA/geospatial/actions/workflows/pre-commit.yml/badge.svg?branch=16.0)](https://github.com/OCA/geospatial/actions/workflows/pre-commit.yml?query=branch%3A16.0)
 [![Build Status](https://github.com/OCA/geospatial/actions/workflows/test.yml/badge.svg?branch=16.0)](https://github.com/OCA/geospatial/actions/workflows/test.yml?query=branch%3A16.0)
@@ -21,7 +24,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[base_geoengine](base_geoengine/) | 16.0.1.4.0 |  | Geospatial support for Odoo
+[base_geoengine](base_geoengine/) | 16.0.1.4.1 |  | Geospatial support for Odoo
 [base_geoengine_demo](base_geoengine_demo/) | 16.0.1.0.0 |  | Geo spatial support Demo
 [base_geolocalize_company](base_geolocalize_company/) | 16.0.1.0.1 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Add latitude and longitude fields on company model
 [geoengine_base_geolocalize](geoengine_base_geolocalize/) | 16.0.1.1.0 |  | Geospatial support for base_geolocalize
